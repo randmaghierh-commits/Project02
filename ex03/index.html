@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ex03 - Colors & Opacity </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <h1>Colors &amp; Opacity</h1>
+
+  <!-- ========== Part 1: Color swatch palette ========== -->
+    <h2>1. Color Swatches</h2>
+
+<div class="palette">
+
+    <div class="swatch named">
+      <span>Named<br>tomato</span>
+    </div>
+    <div class="swatch hex">
+      <span>HEX<br>#1976d2</span>
+    </div>
+    <div class="swatch rgb">
+      <span>RGB<br>rgb(67, 160, 71)</span>
+    </div>
+    <div class="swatch rgba">
+      <span>RGBA<br>rgba(142, 36, 170, 0.5)</span>
+    </div>
+  </div>
+
+<!-- ========== Part 2: opacity vs rgba ========== -->
+  <h2>2. opacity: 0.5 vs rgba(..., 0.5)</h2>
+
+  <div class="compare">
+    <div class="backdrop">
+      <div class="box opacity-box">
+        <p>opacity: 0.5</p>
+        <p class="child">Child text</p>
+      </div>
+    </div>
+
+    <div class="backdrop">
+      <div class="box rgba-box">
+        <p>rgba(..., 0.5)</p>
+        <p class="child">Child text</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="explain">
+    <strong>Left:</strong> <code>opacity</code> fades the whole element, including the text and every child.<br>
+    <strong>Right:</strong> <code>rgba</code> makes only the background transparent; the text stays fully solid.
+  </p>
+
+</body>
+</html>
+
+
+
+
+
+   

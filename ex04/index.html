@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ex04 - Box Model</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>The Box Model</h1>
+
+  <h2>1. box-sizing: content-box</h2>
+  <div class="box content-box">
+    <p>width: 200px</p>
+    <p>padding: 20px</p>
+    <p>border: 10px</p>
+  </div>
+  <p class="note">Total width = 200 + 20 + 20 + 10 + 10 = <strong>260px</strong></p>
+
+  <h2>2. box-sizing: border-box</h2>
+  <div class="box border-box">
+    <p>width: 200px</p>
+    <p>padding: 20px</p>
+    <p>border: 10px</p>
+  </div>
+  <p class="note">Total width = <strong>200px</strong> (padding and border are inside)</p>
+
+  <h2>3. Side-by-side outline of the declared width</h2>
+  <div class="ruler">declared width: 200px</div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  margin: 20px;
+}
+
+h1,
+h2 {
+  color: #222222;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+/* ---------- Part 1: swatches ---------- */
+.palette {
+  overflow: hidden;
+}
+
+.swatch {
+  float: left;
+  width: 160px;
+  height: 120px;
+  margin: 0 15px 15px 0;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Named color */
+.named {
+  background-color: tomato;
+}
+
+/* 6-digit HEX */
+.hex {
+  background-color: #1976d2;
+}
+
+/* RGB */
+.rgb {
+  background-color: rgb(67, 160, 71);
+}
+
+/* RGBA with alpha transparency (the page background shows through) */
+.rgba {
+  background-color: rgba(142, 36, 170, 0.5);
+  color: black;
+}
+
+/* ---------- Part 2: opacity vs rgba ---------- */
+.compare {
+  overflow: hidden;
+}
+
+/* Striped backdrop so transparency is easy to see */
+.backdrop {
+  float: left;
+  width: 280px;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  background-color: #ffeb3b;
+  border: 4px solid #1976d2;
+}
+
+.box {
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+/* opacity affects the element AND all its children */
+.opacity-box {
+  background-color: rgb(229, 57, 53);
+  opacity: 0.5;
+}
+
+/* rgba affects only the background */
+.rgba-box {
+  background-color: rgba(229, 57, 53, 0.5);
+}
+
+.child {
+  margin-top: 10px;
+  color: #000000;
+}
+
+.explain {
+  clear: both;
+  line-height: 1.6;
+}

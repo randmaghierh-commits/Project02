@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* Circular spinner drawn with borders */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #dddddd;
+  border-top-color: #1976d2;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
